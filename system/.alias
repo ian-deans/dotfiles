@@ -1,0 +1,40 @@
+# Environment Aliases
+alias l="ls -la"      # See all files
+alias ld="ls -ld */"  # See only directories
+
+# Cuz fuck .DS_Store
+alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Ask the computer nicely...
+alias plz="sudo"
+
+# Display all aliases
+alias listaliases="alias | sed 's/=.*//'"
+
+# I wanna go fast
+alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
+
+# ---------- Workspace Aliases ----------
+
+export WD='mistaken-blesbok'
+
+alias gpd='cd ~/Documents/developer/projects'
+alias gwd='cd ~/Documents/developer/projects/bookstores/$WD'
+
+alias editbash='atom ~/.bash_profile'
+alias bn='babel-node $argv'
+
+
+# --------- Git Aliases ---------
+
+alias ga='git add $argv'
+alias gst='git status'
+alias gp='git push $argv'
+alias gl='git pull $argv'
+alias gb='git branch $argv'
+alias gc='git commit $argv'
+alias gco='git checkout $argv'
+
+alias grv='git remote -v'
+alias gbv='git branch -vv'
+alias glog='git log --oneline --decorate --graph'
