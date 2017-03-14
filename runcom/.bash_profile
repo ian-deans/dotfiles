@@ -4,6 +4,8 @@
 # Resolve OS
 OS="macOS"
 
+EDITOR=/Applications/Atom.app/Contents/MacOS/Atom
+
 
 # # Resolves the DOTFILES_DIR
 # READLINK=$(which greadlink || which readlink)
@@ -42,4 +44,4 @@ EXTRA_DIR="$HOME/.extra"
 # Clean up
 unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE
 
-export DOTFILES_DIR OS EXTRA_DIR
+export DOTFILES_DIR OS EXTRA_DIR EDITOR
