@@ -6,10 +6,9 @@ OS="macOS"
 
 EDITOR=/Applications/Atom.app/Contents/MacOS/Atom
 
-
 # # Resolves the DOTFILES_DIR
 # READLINK=$(which greadlink || which readlink)
-# CURRENT_SCRIPT=$BASH_SOURCE
+#.bash CURRENT_SCRIPT=$BASH_SOURCE
 #
 # if [[ -n $CURRENT_SCRIPT && -x "$READLINK" ]]; then
 #   SCRIPT_PATH=$($READLINK -f "$CURRENT_SCRIPT")

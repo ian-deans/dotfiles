@@ -1,11 +1,4 @@
-# Remove case-sensitve autocompletion
-set completion-ignore-case on
 
-# List all matches for possible completions
-set show-all-if-ambiguous on
-
-# Add trailing slash when autocompleting symlinks to directories
-set mark-symlinked-directories
 
 # Show extra file information when completing, like `ls -F` does
 set visible-stats on
@@ -26,5 +19,20 @@ set convert-meta off
 "\e[Z": menu-complete
 
 # Filtered history search
-"\e[A": history-search-backward
-"\e[B": history-search-forward
+#"\e[B": history-search-forward
+#"\e[A": history-search-backward
+
+# Completion Options
+set page-completions on
+set completion-ignore-case on
+set completion-query-items 200
+set show-all-if-ambiguous on
+set show-all-if-unmodified on
+set visible-stats on
+set mark-symlinked-directories      # Add trailing slash when autocompleting symlinks to directories
+
+# Useful stuff for UTF-8
+set meta-flag on
+set input-meta on
+set output-meta on
+set convert-meta off
