@@ -1,6 +1,14 @@
 # Environment Aliases
-alias l="ls -la"      # See all files
 alias ld="ls -ld */"  # See only directories
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias ls='ls --color=auto'
+
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
 # Cuz fuck .DS_Store
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
@@ -21,7 +29,7 @@ export WD='mistaken-blesbok'
 alias gpd='cd ~/Documents/developer/projects'
 alias gwd='cd ~/Documents/developer/projects/bookstores/$WD'
 
-alias editbash='atom ~/.bash_profile'
+alias editbash='atom ~/.dotfiles'
 alias bn='babel-node $argv'
 
 
