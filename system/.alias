@@ -29,7 +29,7 @@ export WD='mistaken-blesbok'
 alias gpd='cd ~/Documents/developer/projects'
 alias gwd='cd ~/Documents/developer/projects/bookstores/$WD'
 
-alias editbash='atom ~/.bash_profile'
+alias editbash='atom ~/.dotfiles'
 alias bn='babel-node $argv'
 
 
