@@ -22,7 +22,7 @@ DOTFILES_DIR="$HOME/.dotfiles"
 
 # source the dotfiles
 
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,env,alias,prompt}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{function,path,env,alias,prompt}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
