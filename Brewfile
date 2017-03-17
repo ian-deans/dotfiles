@@ -1,0 +1,9 @@
+install postgresql
+install mongodb
+install mysql
+install sqlite
+install python
+install nvm
+install git
+instal git-extras
+install android-sdk

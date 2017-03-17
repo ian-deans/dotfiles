@@ -1,0 +1,27 @@
+# Install Cask
+tap caskroom/cask/brew-cask
+cask_args appdir: '/Applications'
+
+cask install flux
+# Install Casks
+# cask install alfred
+# cask install caffeine
+
+cask install virtualbox
+cask install vagrant
+
+cask install google-chrome
+cask install firefox
+cask install atom
+cask install iterm2
+cask install psequel
+cask install spectacle
+
+
+cask install slack
+cask install vlc
+cask install the-unarchiver
+# cask install adium
+# cask install nvalt
+# cask install rdio
+# cask install textexpander
