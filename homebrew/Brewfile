@@ -1,6 +1,5 @@
-install postgresql
+install postgres
 install mongodb
-install mysql
 install sqlite
 install python
 install nvm

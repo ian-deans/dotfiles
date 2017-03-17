@@ -54,4 +54,6 @@ EXTRA_DIR="$HOME/.extra"
 # Clean up
 unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE
 
+source .inputrc
+
 export DOTFILES_DIR OS EXTRA_DIR EDITOR

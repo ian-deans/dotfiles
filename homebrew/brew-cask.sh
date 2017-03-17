@@ -5,31 +5,33 @@ brew tap caskroom/cask
 brew install brew-cask
 brew tap caskroom/versions
 
+cask_args appdir: '/Applications'
+
 # Install packages
 apps=(
-    dropbox
-    google-drive
-    spectacle
-    flux
-    dash
-    evernote
-    iterm2
+    android-studio
     atom
-    webstorm
+    dash
+    discord
+    dropbox
+    evernote
     firefox
     firefoxnightly
+    flux
     google-chrome
     google-chrome-canary
-    opera
-    screenflow
-    spotify
-    slack
-    utorrent
-    virtualbox
-    vagrant
+    google-drive
     psequel
+    opera
+    iterm2
+    screenflow
     slack
-    discord
+    spectacle
+    spotify
+    utorrent
+    webstorm
+    vagrant
+    virtualbox
 )
 
 brew cask install "${apps[@]}"
