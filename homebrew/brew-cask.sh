@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Ask for the administrator password upfront
+sudo -v
+
 # Install Caskroom
 brew tap caskroom/cask
 brew install brew-cask
@@ -21,10 +24,12 @@ apps=(
     google-chrome
     google-chrome-canary
     google-drive
+    java
     psequel
     opera
     iterm2
     screenflow
+    screenhero
     slack
     spectacle
     spotify

@@ -53,6 +53,7 @@ packages=(
     svgo
     yo
     babel-cli
+    react-native
 )
 
 npm install -g "${packages[@]}"
