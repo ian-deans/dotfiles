@@ -25,6 +25,8 @@ desktop.ini
 ehthumbs.db
 Thumbs.db
 
+node_modules
+
 # Other dev-related files
 *.bak
 *.orig

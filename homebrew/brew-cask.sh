@@ -28,7 +28,6 @@ apps=(
     psequel
     opera
     iterm2
-    screenflow
     screenhero
     slack
     spectacle
@@ -36,6 +35,7 @@ apps=(
     utorrent
     webstorm
     vagrant
+    visual-studio-code
     virtualbox
 )
 

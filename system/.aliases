@@ -12,8 +12,11 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+# Check file sizes of current directory
+alias fsizes="du -hd 1 | sort"
+
 # Cuz fuck .DS_Store
-alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
+alias fuckds="find / -type f -name '*.DS_Store' -ls -delete"
 
 # Ask the computer nicely...
 alias plz="sudo"
@@ -26,13 +29,18 @@ alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
 # ---------- Workspace Aliases ----------
 
-export WD='reactful-portfolio'
+export WD='git_hub_pages'
 
+alias gosp='cd ~/Documents/developer/OSS'
+alias gopo='cd ~/Documents/sdeveloper/projects/fryymann715.github.io'
 alias gpd='cd ~/Documents/developer/projects'
-alias gwd='cd ~/Documents/developer/projects/$WD'
+alias gwd='cd /Users/ideans/Documents/developer/projects/$WD'
 
 alias editbash='atom ~/.dotfiles'
 alias bn='babel-node $argv'
+
+alias npmbabel='npm install --save-dev babel-core babel-cli babel-preset-env'
+alias npmreact='npmbabel ; npm install --save-dev babel-preset-react react react-dom'
 
 
 # --------- Git Aliases ---------

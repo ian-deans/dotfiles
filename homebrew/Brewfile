@@ -2,7 +2,8 @@ install postgres
 install mongodb
 install sqlite
 install python
+install python3
 install nvm
 install git
-instal git-extras
+install git-extras
 install android-sdk
