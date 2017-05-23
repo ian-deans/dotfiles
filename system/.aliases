@@ -1,3 +1,7 @@
+# Current Working Directory
+
+export WD='core-goals/core-data-structures'
+
 # Environment Aliases
 alias ld="ls -ld */"  # See only directories
 alias ll='ls -alF'
@@ -25,8 +29,6 @@ alias listaliases="alias | sed 's/=.*//'"
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
 # ---------- Workspace Aliases ----------
-
-export WD='reactful-portfolio'
 
 alias gpd='cd ~/Documents/developer/projects'
 alias gwd='cd ~/Documents/developer/projects/$WD'

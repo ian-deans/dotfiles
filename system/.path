@@ -3,5 +3,6 @@ PATH="/home/ideans/perl5/bin${PATH:+:${PATH}}";
 PATH=${PATH}:${ANDROID_HOME}/tools;
 PATH=${PATH}:${ANDROID_HOME}/platform-tools;
 PATH="/home/ideans/.linuxbrew/bin:${PATH}";
+PATH="./node_modules/.bin:${PATH}";
 
 export PATH
