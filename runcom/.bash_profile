@@ -26,7 +26,6 @@ DOTFILES_DIR="$HOME/.dotfiles"
 
 # source the dotfiles
 
-
 for DOTFILE in "$DOTFILES_DIR"/system/.{path,prompt,env,aliases,function}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
@@ -38,7 +37,9 @@ if [ "$OS" = "macOS" ]; then
 fi
 
 # Set coloring for ls command
-eval "$(dircolors "$DOTFILES_DIR"/system/.dir_colors)"
+if [ '$OS' = 'Linux' ]; then
+  eval "$(dircolors "$DOTFILES_DIR"/system/.dir_colors)"
+fi
 
 
 # source ~/.dotfiles/system/.bash_prompt
