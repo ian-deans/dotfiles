@@ -1,28 +1,35 @@
-# Current Working Directory
+# ---------- Workspace Aliases ----------
 
+# Current Working Directory
 export WD='portfolio'
 
-
-# LOS IDM variables
+alias gpd='cd ~/Documents/developer/projects'
+alias gwd='cd ~/Documents/developer/projects/$WD'
 alias golos='cd ${HOME}/Documents/developer/LOS'
+
+alias editbash='atom ~/.dotfiles'
+alias bn='babel-node $argv'
+
+
+# --------- LOS IDM variables ---------
 export NPM_AUTH_TOKEN=$(cat $HOME/.npmrc | grep _authToken | cut -d '=' -f2)
 export NODE_ENV=development
 
-# Environment Aliases
+# ---------- Environment Aliases ----------
 alias ld="ls -ld */"  # See only directories
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
 if [ '$OS' = 'Linux' ]; then
-alias ls='ls --color=auto'
+	alias ls='ls --color=auto'
 fi
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-# Cuz fuck .DS_Store
+# Cuz ya'know... screw .DS_Store files...
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Ask the computer nicely...
@@ -34,17 +41,7 @@ alias listaliases="alias | sed 's/=.*//'"
 # I wanna go fast
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
-# ---------- Workspace Aliases ----------
-
-alias gpd='cd ~/Documents/developer/projects'
-alias gwd='cd ~/Documents/developer/projects/$WD'
-
-alias editbash='atom ~/.dotfiles'
-alias bn='babel-node $argv'
-
-
 # --------- Git Aliases ---------
-
 alias ga='git add $argv'
 alias gst='git status'
 alias gp='git push $argv'
