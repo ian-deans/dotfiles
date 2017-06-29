@@ -1,6 +1,12 @@
 # Current Working Directory
 
-export WD='core-goals/core-data-structures'
+export WD='portfolio'
+
+
+# LOS IDM variables
+alias golos='cd ${HOME}/Documents/developer/LOS'
+export NPM_AUTH_TOKEN=$(cat $HOME/.npmrc | grep _authToken | cut -d '=' -f2)
+export NODE_ENV=development
 
 # Environment Aliases
 alias ld="ls -ld */"  # See only directories
@@ -9,7 +15,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 if [ '$OS' = 'Linux' ]; then
-  alias ls='ls --color=auto'
+alias ls='ls --color=auto'
 fi
 
 alias grep='grep --color=auto'
