@@ -10,6 +10,9 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+# Postgres start and stop aliases
+alias pgstart="postgres -D ~/psql/data >logfile 2>&1 &"
+
 # Cuz fuck .DS_Store
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 
@@ -28,6 +31,7 @@ export WD='mistaken-blesbok'
 
 alias gpd='cd ~/Documents/developer/projects'
 alias gwd='cd ~/Documents/developer/projects/bookstores/$WD'
+alias golos='cd ~/Documents/developer/LOS'
 
 alias editbash='atom ~/.dotfiles'
 alias bn='babel-node $argv'

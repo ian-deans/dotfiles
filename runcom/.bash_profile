@@ -10,6 +10,8 @@ fi
 
 EDITOR=/Applications/Atom.app/Contents/MacOS/Atom
 
+export NPM_AUTH_TOKEN=$(cat $HOME/.npmrc | grep _authToken | cut -d '=' -f2)
+
 # # Resolves the DOTFILES_DIR
 # READLINK=$(which greadlink || which readlink)
 #.bash CURRENT_SCRIPT=$BASH_SOURCE
@@ -57,3 +59,4 @@ unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE
 source .inputrc
 
 export DOTFILES_DIR OS EXTRA_DIR EDITOR
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
