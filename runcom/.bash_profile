@@ -10,8 +10,6 @@ fi
 
 EDITOR=/Applications/Atom.app/Contents/MacOS/Atom
 
-export NPM_AUTH_TOKEN=$(cat $HOME/.npmrc | grep _authToken | cut -d '=' -f2)
-
 # # Resolves the DOTFILES_DIR
 # READLINK=$(which greadlink || which readlink)
 #.bash CURRENT_SCRIPT=$BASH_SOURCE

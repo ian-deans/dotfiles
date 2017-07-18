@@ -10,3 +10,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Node Environment Variable
 export NODE_ENV=development
+
+#NPM AUTH TOKEN for LOS
+export NPM_AUTH_TOKEN=$(cat $HOME/.npmrc | grep _authToken | cut -d '=' -f2)
