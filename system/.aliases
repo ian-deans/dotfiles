@@ -9,6 +9,7 @@ alias golos='cd ${HOME}/Documents/developer/LOS'
 
 alias editbash='atom ~/.dotfiles'
 alias bn='babel-node $argv'
+alias slacktunnel='lt --port $(cat ~/.mehserve/echo.learnersguild) --subdomain slackslash'
 
 
 # --------- LOS IDM variables ---------
