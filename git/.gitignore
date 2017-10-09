@@ -36,4 +36,4 @@ Thumbs.db
 svn-commit.*
 tags
 TAGS
-.vscode/
+*.vscode

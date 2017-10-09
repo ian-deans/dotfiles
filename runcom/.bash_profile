@@ -8,7 +8,7 @@ else
   OS=$(uname -s)
 fi
 
-EDITOR=/Applications/Atom.app/Contents/MacOS/Atom
+#EDITOR=/Applications/Atom.app/Contents/MacOS/Atom
 
 # # Resolves the DOTFILES_DIR
 # READLINK=$(which greadlink || which readlink)
@@ -58,6 +58,4 @@ unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE
 source .inputrc
 
 export DOTFILES_DIR OS EXTRA_DIR EDITOR
-[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
 
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
