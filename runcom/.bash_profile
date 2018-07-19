@@ -59,3 +59,4 @@ source .inputrc
 
 export DOTFILES_DIR OS EXTRA_DIR EDITOR
 
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn

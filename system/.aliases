@@ -43,7 +43,10 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-# Cuz ya'know... screw .DS_Store files...
+
+# Postgres start and stop aliases
+alias pgstart="postgres -D ~/psql/data >logfile 2>&1 &"
+
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Ask the computer nicely...
@@ -54,6 +57,14 @@ alias listaliases="alias | sed 's/=.*//'"
 
 # I wanna go fast
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
+
+# ---------- Workspace Aliases ----------
+
+export WD='mistaken-blesbok'
+
+alias editbash='atom ~/.dotfiles'
+alias bn='babel-node $argv'
+
 
 # --------- Git Aliases ---------
 alias ga='git add $argv'
