@@ -8,7 +8,7 @@ else
   OS=$(uname -s)
 fi
 
-EDITOR=/Applications/Atom.app/Contents/MacOS/Atom
+#EDITOR=/Applications/Atom.app/Contents/MacOS/Atom
 
 # # Resolves the DOTFILES_DIR
 # READLINK=$(which greadlink || which readlink)
@@ -26,7 +26,6 @@ DOTFILES_DIR="$HOME/.dotfiles"
 
 # source the dotfiles
 
-
 for DOTFILE in "$DOTFILES_DIR"/system/.{path,prompt,env,aliases,function}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
@@ -38,7 +37,9 @@ if [ "$OS" = "macOS" ]; then
 fi
 
 # Set coloring for ls command
-eval "$(dircolors "$DOTFILES_DIR"/system/.dir_colors)"
+if [ '$OS' = 'Linux' ]; then
+  eval "$(dircolors "$DOTFILES_DIR"/system/.dir_colors)"
+fi
 
 
 # source ~/.dotfiles/system/.bash_prompt
@@ -57,4 +58,5 @@ unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE
 source .inputrc
 
 export DOTFILES_DIR OS EXTRA_DIR EDITOR
+
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn

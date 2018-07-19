@@ -1,19 +1,52 @@
-# Environment Aliases
+# ---------- Workspace Aliases ----------
+
+# LOS ECHO test alias
+alias testEcho='NODE_ENV=test ./node_modules/.bin/mocha --opts ./src/test/mocha.opts ./src/server/workers/__tests__/memberCreated.test.js'
+
+# Current Working Directory
+export WD='portfolio'
+
+alias gpd='cd ~/Documents/developer/projects'
+alias gwd='cd ~/Documents/developer/projects/$WD'
+alias golos='cd ${HOME}/Documents/developer/LOS/${argv}'
+
+# go aliases for workspaces
+
+alias go:echo='cd ~/Documents/developer/LOS/echo'
+alias go:idm='cd ~/Documents/developer/LOS/idm'
+alias go:echo-cli='cd ~/Documents/developer/LOS/echo-cli'
+
+alias editbash='code ~/.dotfiles'
+alias bn='babel-node $argv'
+alias slacktunnel='lt --port $(cat ~/.mehserve/echo.learnersguild) --subdomain slackslash'
+
+alias ipinfo='curl ipinfo.io'
+
+# --------- LOS IDM variables & aliases ---------
+export NPM_AUTH_TOKEN=$(cat $HOME/.npmrc | grep _authToken | cut -d '=' -f2)
+export NODE_ENV=development
+alias echo:cycle:launch='npm run command -- --token=tAThq4A2R3eZx3LGT5qlki6y --handle=ian-deans cycle launch'
+alias echo:cycle:init='npm run command -- --token=tAThq4A2R3eZx3LGT5qlki6y --handle=ian-deans cycle init'
+alias echo:cycle:reflect='npm run command -- --token=tAThq4A2R3eZx3LGT5qlki6y --handle=ian-deans cycle reflect'
+
+# ---------- Environment Aliases ----------
 alias ld="ls -ld */"  # See only directories
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias ls='ls --color=auto'
 
+if [ '$OS' = 'Linux' ]; then
+	alias ls='ls --color=auto'
+fi
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+
 # Postgres start and stop aliases
 alias pgstart="postgres -D ~/psql/data >logfile 2>&1 &"
 
-# Cuz fuck .DS_Store
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Ask the computer nicely...
@@ -29,16 +62,11 @@ alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
 export WD='mistaken-blesbok'
 
-alias gpd='cd ~/Documents/developer/projects'
-alias gwd='cd ~/Documents/developer/projects/bookstores/$WD'
-alias golos='cd ~/Documents/developer/LOS'
-
 alias editbash='atom ~/.dotfiles'
 alias bn='babel-node $argv'
 
 
 # --------- Git Aliases ---------
-
 alias ga='git add $argv'
 alias gst='git status'
 alias gp='git push $argv'
