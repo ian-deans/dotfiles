@@ -12,6 +12,8 @@ ln -sfv "$DOTFILES_DIR/runcom/.inputrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore" ~
 
+sudo apt-get install xclip;
+
 # Install Git
 sudo apt-get install git;
 
@@ -23,3 +25,7 @@ sudo apt-get update && sudo apt-get install code
 
 # Install Node Version Manager
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+
+# Generate ssh key for usage with GitHub
+echo "\n Generating SSH Key..."
+ssh-keygen -t rsa -b 4096 -C "ideans715@gmail.com" && ssh-add ~/.ssh/id_rsa
