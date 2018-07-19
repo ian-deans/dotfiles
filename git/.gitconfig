@@ -60,8 +60,5 @@
 [url "git@github.com:"]
   insteadof = github:
 
-
-
-
 [push]
 	default = simple
