@@ -3,10 +3,7 @@ alias ld="ls -ld */"  # See only directories
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-
-if [ '$OS' = 'Linux' ]; then
-  alias ls='ls --color=auto'
-fi
+alias ls='ls --color=auto'
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -25,18 +22,12 @@ alias listaliases="alias | sed 's/=.*//'"
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
 # ---------- Workspace Aliases ----------
-
-export WD='reactful-portfolio'
-
 alias gpd='cd ~/Documents/developer/projects'
-alias gwd='cd ~/Documents/developer/projects/$WD'
 
-alias editbash='atom ~/.dotfiles'
+alias editbash='code ~/.dotfiles'
 alias bn='babel-node $argv'
 
-
 # --------- Git Aliases ---------
-
 alias ga='git add $argv'
 alias gst='git status'
 alias gp='git push $argv'

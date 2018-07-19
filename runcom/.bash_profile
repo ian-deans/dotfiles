@@ -8,25 +8,12 @@ else
   OS=$(uname -s)
 fi
 
-EDITOR=/Applications/Atom.app/Contents/MacOS/Atom
-
-# # Resolves the DOTFILES_DIR
-# READLINK=$(which greadlink || which readlink)
-#.bash CURRENT_SCRIPT=$BASH_SOURCE
-#
-# if [[ -n $CURRENT_SCRIPT && -x "$READLINK" ]]; then
-#   SCRIPT_PATH=$($READLINK -f "$CURRENT_SCRIPT")
-#   DOTFILES_DIR=$(dirname "$(dirname "$SCRIPT_PATH")")
-# elif [ -d "$HOME/.dotfiles" ]; then
-# else
-#   echo "Unable to find dotfiles, exiting."
-#   return # `exit 1` would quit the shell itself
-# fi
+# Establish directory variables
 DOTFILES_DIR="$HOME/.dotfiles"
+EXTRA_DIR="$HOME/.extra"
+
 
 # source the dotfiles
-
-
 for DOTFILE in "$DOTFILES_DIR"/system/.{path,prompt,env,aliases,function}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
@@ -38,18 +25,8 @@ if [ "$OS" = "macOS" ]; then
 fi
 
 # Set coloring for ls command
-eval "$(dircolors "$DOTFILES_DIR"/system/.dir_colors)"
+# eval "$(dircolors "$DOTFILES_DIR"/system/.dir_colors)"
 
-
-# source ~/.dotfiles/system/.bash_prompt
-
-# for file in ~/.{bash_prompt}; do
-#   [ -r "$file" ] && [ -f "$file" ] && source "$file";
-# done;
-# unset file;
-
-
-EXTRA_DIR="$HOME/.extra"
 
 # Clean up
 unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE
