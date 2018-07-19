@@ -1,11 +1,42 @@
-# Environment Aliases
+# ---------- Workspace Aliases ----------
+
+# LOS ECHO test alias
+alias testEcho='NODE_ENV=test ./node_modules/.bin/mocha --opts ./src/test/mocha.opts ./src/server/workers/__tests__/memberCreated.test.js'
+
+# Current Working Directory
+export WD='portfolio'
+
+alias gpd='cd ~/Documents/developer/projects'
+alias gwd='cd ~/Documents/developer/projects/$WD'
+alias golos='cd ${HOME}/Documents/developer/LOS/${argv}'
+
+# go aliases for workspaces
+
+alias go:echo='cd ~/Documents/developer/LOS/echo'
+alias go:idm='cd ~/Documents/developer/LOS/idm'
+alias go:echo-cli='cd ~/Documents/developer/LOS/echo-cli'
+
+alias editbash='code ~/.dotfiles'
+alias bn='babel-node $argv'
+alias slacktunnel='lt --port $(cat ~/.mehserve/echo.learnersguild) --subdomain slackslash'
+
+alias ipinfo='curl ipinfo.io'
+
+# --------- LOS IDM variables & aliases ---------
+export NPM_AUTH_TOKEN=$(cat $HOME/.npmrc | grep _authToken | cut -d '=' -f2)
+export NODE_ENV=development
+alias echo:cycle:launch='npm run command -- --token=tAThq4A2R3eZx3LGT5qlki6y --handle=ian-deans cycle launch'
+alias echo:cycle:init='npm run command -- --token=tAThq4A2R3eZx3LGT5qlki6y --handle=ian-deans cycle init'
+alias echo:cycle:reflect='npm run command -- --token=tAThq4A2R3eZx3LGT5qlki6y --handle=ian-deans cycle reflect'
+
+# ---------- Environment Aliases ----------
 alias ld="ls -ld */"  # See only directories
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
 if [ '$OS' = 'Linux' ]; then
-  alias ls='ls --color=auto'
+	alias ls='ls --color=auto'
 fi
 
 alias grep='grep --color=auto'
@@ -15,8 +46,11 @@ alias egrep='egrep --color=auto'
 # Check file sizes of current directory
 alias fsizes="du -hd 1 | sort"
 
-# Cuz fuck .DS_Store
-alias fuckds="find / -type f -name '*.DS_Store' -ls -delete"
+# Postgres start and stop aliases
+alias pgstart="postgres -D ~/psql/data >logfile 2>&1 &"
+
+alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
+
 
 # Ask the computer nicely...
 alias plz="sudo"
@@ -29,12 +63,7 @@ alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
 # ---------- Workspace Aliases ----------
 
-export WD='git_hub_pages'
-
-alias gosp='cd ~/Documents/developer/OSS'
-alias gopo='cd ~/Documents/sdeveloper/projects/fryymann715.github.io'
-alias gpd='cd ~/Documents/developer/projects'
-alias gwd='cd /Users/ideans/Documents/developer/projects/$WD'
+export WD='mistaken-blesbok'
 
 alias editbash='atom ~/.dotfiles'
 alias bn='babel-node $argv'
@@ -44,7 +73,6 @@ alias npmreact='npmbabel ; npm install --save-dev babel-preset-react react react
 
 
 # --------- Git Aliases ---------
-
 alias ga='git add $argv'
 alias gst='git status'
 alias gp='git push $argv'
