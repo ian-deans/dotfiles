@@ -17,6 +17,9 @@ sudo apt-get install xclip;
 # Install Git
 sudo apt-get install git;
 
+# Install discord
+sudo apt install snapd && sudo snap install discord
+
 # Install VS Code
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
