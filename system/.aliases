@@ -21,6 +21,8 @@ alias listaliases="alias | sed 's/=.*//'"
 # I wanna go fast
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
+alias startmongo="mongod --dbpath /home/ideans/Documents/dev/tools/mongodb/mongodb-linux-x86_64-3.6.6/data/db"
+
 # ---------- Workspace Aliases ----------
 alias gpd='cd ~/Documents/dev/projects'
 
