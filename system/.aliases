@@ -29,6 +29,9 @@ alias startmongo="mongod --dbpath /home/ideans/Documents/dev/tools/mongodb/mongo
 alias gpd='cd ~/Documents/dev/projects'
 alias godev='cd /media/ideans/Passport/Mint/_dev/projects'
 
+alias gcinch='cd ~/Documents/dev/projects/CinchSports/cinch'
+alias gcincht='cd ~/Documents/dev/projects/CinchSports/cinch_test'
+
 alias editbash='code ~/.dotfiles'
 alias bn='babel-node $argv'
 
