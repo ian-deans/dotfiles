@@ -9,6 +9,8 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+alias debv="cat /etc/debian_version"
+
 # Cuz fuck .DS_Store
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 
@@ -21,8 +23,14 @@ alias listaliases="alias | sed 's/=.*//'"
 # I wanna go fast
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
+alias startmongo="mongod --dbpath /home/ideans/Documents/dev/tools/mongodb/mongodb-linux-x86_64-3.6.6/data/db"
+
 # ---------- Workspace Aliases ----------
 alias gpd='cd ~/Documents/dev/projects'
+alias godev='cd /media/ideans/Passport/Mint/_dev/projects'
+
+alias gcinch='cd ~/Documents/dev/projects/CinchSports/cinch'
+alias gcincht='cd ~/Documents/dev/projects/CinchSports/cinch_test'
 
 alias editbash='code ~/.dotfiles'
 alias bn='babel-node $argv'
