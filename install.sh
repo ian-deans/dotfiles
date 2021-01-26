@@ -15,5 +15,5 @@ ln -sfv "$DOTFILES_DIR/git/.gitignore" ~
 source ./install/apps_packages.sh
 
 # Generate ssh key for usage with GitHub
-# echo "\n Generating SSH Key..."
-# ssh-keygen -t rsa -b 4096 -C "ideans715@gmail.com" && ssh-add ~/.ssh/id_rsa
+echo "\n Generating SSH Key..."
+ssh-keygen -t rsa -b 4096 -C "ideans715@gmail.com" && ssh-add ~/.ssh/id_rsa
